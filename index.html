@@ -28,8 +28,25 @@
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Disclaimer: Demonstration Purposes Only</h4>
+      </div>
+      <div class="modal-body">
+        <p>This site is for demonstation purposes and not affliated with
+	Netchex. Netchex holds the rights to all images, logos and copy.
+	Netchex's official website can be found <a href="http://netchexonline.com">here</a>.</p>
+	<p>Created by: Derek Snow</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
   <header>
     <div class="container">
       <img src="img/logo.png" alt="Netchex Logo"> <span class=
@@ -423,6 +440,11 @@
   </div>
   <script src="components/jquery/dist/jquery.min.js">
 </script> <script src="components/bootstrap/dist/js/bootstrap.min.js">
+</script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#myModal').modal('show');
+    });
 </script>
 </body>
 </html>
